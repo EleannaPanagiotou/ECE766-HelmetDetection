@@ -133,6 +133,33 @@
 </section>
 <!-- End Introduction and Motivation -->
 
+<!-- Dataset Description Section -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Dataset Description</h2>
+        <div class="content">
+          <p>
+            The dataset we used for this project is the Hard Hat worker image dataset published by MakeML <a href="#ref-5">[5]</a>. This dataset is specifically designed for the detection of hard helmets used in the construction industry. It contains 5000 images, each accompanied by bounding box annotation files. Initially, the dataset includes three classes: Helmet, Person, and Head with more than 26000 total instances. 
+          </p>
+          <figure>
+            <img src="static/images/dataset_histogram.png" alt="Histogram of the three classes in dataset">
+            <figcaption>Figure 1: Histogram of the three classes in dataset.</figcaption>
+          </figure>
+          <h3 class="title is-4">Data Pre-processing</h3>
+          <p>
+            As we can observe from the Figure 1 above, the dataset is highly imbalanced. Most of the instances (approximately 15000) refer to the 'helmet' class while only about 5000 instances are of the 'head' class and less than 1000 instances are of the 'person' class. So, for this research, we will focus only on two classes: 'Helmet' and 'Head'. The decision to focus only on these two classes is also based on the project’s primary goal of detecting whether workers are wearing their safety helmets correctly. By identifying instances of "Head" without a corresponding "Helmet," the system can alert supervisors to potential safety violations, allowing for prompt corrective action. Furthermore, we reshaped the images into (640x640) to comply with the YOLO input size requirements. Finally, we split our data into 3 sets (training, validation, and test sets) with 3000, 1000, and 1000 images respectively.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Dataset Description Section -->
+
+
+  
 <!-- Method Section -->
 <section class="section hero">
   <div class="container is-max-desktop">
