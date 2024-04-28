@@ -133,103 +133,49 @@
 </section>
 <!-- End Introduction and Motivation -->
 
-
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
+<!-- Method Section -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method</h2>
+        <div class="content">
+          <p>
+            For this project, we trained the YOLOv5 and YOLOv8 models. These are state-of-the-art object detection architectures that have gained significant popularity due to their efficiency and accuracy. These architectures share several key components that contribute to their exceptional performance:
+          </p>
+          <ol>
+            <li>
+              <strong>Backbone:</strong> Both YOLOv5 and YOLOv8 employ a modified version of the CSPNet (Cross Stage Partial Network) as their backbone for feature extraction. This design choice helps reduce the model's complexity while maintaining its effectiveness in capturing essential features from the input images.
+            </li>
+            <li>
+              <strong>Neck:</strong> The PANet (Path Aggregation Network) serves as the neck in these architectures. Its primary function is to aggregate feature maps from different scales, enabling the model to detect objects of various sizes more effectively. The neck plays a crucial role in enhancing the model's ability to handle scale variations.
+            </li>
+            <li>
+              <strong>Head:</strong> The detection head is responsible for predicting bounding boxes, objectness scores, and class probabilities. In YOLOv5, anchor boxes are utilized to improve detection accuracy. However, YOLOv8 adopts an anchor-free split Ultralytics head, which contributes to better accuracy and a more efficient detection process compared to anchor-based approaches.
+            </li>
+            <li>
+              <strong>Scalability:</strong> Both versions of YOLO offers multiple model sizes (nano, small, medium, large, extra large) according to the number of parameters, allowing users to choose a model that best suits their specific requirements in terms of speed and accuracy. This scalability makes YOLO adaptable to various application domains and computational constraints.
+            </li>
+          </ol>
+          <p>
+            Here, we focus on the YOLOv5n and YOLOv8n variants due to limited computation resources. Adam optimizer was utilized for training the networks using a learning rate of 0.001 and momentum of 0.937 with batch size of 32.
+          </p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End youtube video -->
+<!-- End Method Section -->
 
 
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
+
+
+
+
+
+
+
+
 
 
 
