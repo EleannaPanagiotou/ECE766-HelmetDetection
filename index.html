@@ -192,23 +192,23 @@
             <figcaption>Figure 2: Visual representation of YOLO model architecture.</figcaption>
           </figure>
           <p>
-            Here, we focus on the YOLOv5n and YOLOv8n variants due to limited computation resources. Adam optimizer was utilized for training the networks using a learning rate of 0.001 and momentum of 0.937 with batch size of 32.
+            Here, we focus on the YOLOv5n and YOLOv8n variants due to limited computation resources. 
           </p>
 
           <!-- DETR Subsection -->
           <h3 class="title is-4">DETR</h3>
           <p>
-            In addition to YOLO architectures, we also explored the use of DETR (Detection Transformer), a novel architecture that approaches object detection with a set-based global loss and uses transformers. DETR eliminates the need for many hand-designed components like anchor generation and non-maximum suppression that YOLO relies on.
+            In addition to YOLO architectures, we also explored the use of DETR (Detection Transformer), a novel architecture that approaches object detection with a set-based global loss and uses transformers. DETR eliminates the need for many hand-designed components like anchor generation and non-maximum suppression that YOLO relies on. This method has never been used for this specific problem and based on our results it can become one of the best approaches. It consists of 3 main components:
           </p>
           <ol>
             <li>
-              <strong>Architecture:</strong> DETR utilizes a transformer encoder-decoder architecture. The encoder processes the input image as a whole and passes the context to the decoder which predicts final bounding boxes and classes for the objects.
+              <strong>CNN Backbone:</strong> DETR utilizes the pretrained ResNet50 for feature extraction. 
             </li>
             <li>
-              <strong>Training:</strong> The model is trained end-to-end with a unique bipartite matching loss that forces unique predictions via a matching cost between predicted and true boxes, minimizing the need for complex post-processing.
+              <strong>Encoder - Decoder:</strong> These layers produce the final set of predicted class labels and bounding boxes through multiple multi-head self-attention and decoder-encoder attention.
             </li>
             <li>
-              <strong>Performance:</strong> While DETR can be slower to train due to its complexity and the need for attention across the entire image, it provides high accuracy and a cleaner integration with other tasks like segmentation and classification.
+              <strong>Feed Forward network:</strong>  for the final detection prediction.
             </li>
           </ol>
           <p>
