@@ -218,6 +218,15 @@
             <img src="static/images/detr.png" alt="Visual representation of DETR model architecture" style="width:100%; max-width:600px; height:auto;">
             <figcaption>Figure 3: Visual representation of DETR model architecture.</figcaption>
           </figure>
+
+          <!-- Evaluation Metrics Subsection -->
+          <h3 class="title is-4">Evaluation Metrics</h3>
+          <p>We evaluate the performance of the models using metrics such as precision, recall, and mean average precision (mAP), each serving a distinct role in assessing the effectiveness of the helmet detection models. More specifically,</p>
+          <ul>
+            <li><strong>Precision:</strong> measures the proportion of true positive helmet predictions among all positive predictions, ensuring the model minimizes false alarms that could cause unnecessary interruptions on construction sites.</li>
+            <li><strong>Recall:</strong> evaluates the model's ability to detect all actual helmets present, even in challenging conditions, which is vital for not missing any helmets that could compromise worker safety.</li>
+            <li><strong>Mean Average Precision (mAP):</strong> provides a comprehensive measure of the model's quality by averaging precision values at different recall levels, enabling evaluation of its effectiveness in accurately identifying helmets under diverse and challenging real-world conditions.</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -225,62 +234,7 @@
 </section>
 <!-- End Method Section -->
 
-<!-- Method Section -->
-<section class="section hero">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Method</h2>
-        <div class="content">
-          
-          <!-- YOLO Subsection -->
-          <h3 class="title is-4">YOLO</h3>
-          <p>
-            For this project, we trained the YOLOv5 and YOLOv8 models. These are state-of-the-art object detection architectures that have gained significant popularity due to their efficiency and accuracy. These architectures share several key components that contribute to their exceptional performance:
-          </p>
-          <ol>
-            <li>
-              <strong>Backbone:</strong> Both YOLOv5 and YOLOv8 employ a modified version of the CSPNet (Cross Stage Partial Network) as their backbone for feature extraction. This design choice helps reduce the model's complexity while maintaining its effectiveness in capturing essential features from the input images.
-            </li>
-            <li>
-              <strong>Neck:</strong> The PANet (Path Aggregation Network) serves as the neck in these architectures. Its primary function is to aggregate feature maps from different scales, enabling the model to detect objects of various sizes more effectively. The neck plays a crucial role in enhancing the model's ability to handle scale variations.
-            </li>
-            <li>
-              <strong>Head:</strong> The detection head is responsible for predicting bounding boxes, objectness scores, and class probabilities. In YOLOv5, anchor boxes are utilized to improve detection accuracy. However, YOLOv8 adopts an anchor-free split Ultralytics head, which contributes to better accuracy and a more efficient detection process compared to anchor-based approaches.
-            </li>
-            <li>
-              <strong>Scalability:</strong> Both versions of YOLO offer multiple model sizes (nano, small, medium, large, extra large) according to the number of parameters, allowing users to choose a model that best suits their specific requirements in terms of speed and accuracy. This scalability makes YOLO adaptable to various application domains and computational constraints.
-            </li>
-          </ol>
-          <p>
-            Here, we focus on the YOLOv5n and YOLOv8n variants due to limited computation resources. Adam optimizer was utilized for training the networks using a learning rate of 0.001 and momentum of 0.937 with batch size of 32.
-          </p>
 
-          <!-- DETR Subsection -->
-          <h3 class="title is-4">DETR</h3>
-          <p>
-            In addition to YOLO architectures, we also explored the use of DETR (Detection Transformer), a novel architecture that approaches object detection with a set-based global loss and uses transformers. DETR eliminates the need for many hand-designed components like anchor generation and non-maximum suppression that YOLO relies on.
-          </p>
-          <ol>
-            <li>
-              <strong>Architecture:</strong> DETR utilizes a transformer encoder-decoder architecture. The encoder processes the input image as a whole and passes the context to the decoder which predicts final bounding boxes and classes for the objects.
-            </li>
-            <li>
-              <strong>Training:</strong> The model is trained end-to-end with a unique bipartite matching loss that forces unique predictions via a matching cost between predicted and true boxes, minimizing the need for complex post-processing.
-            </li>
-            <li>
-              <strong>Performance:</strong> While DETR can be slower to train due to its complexity and the need for attention across the entire image, it provides high accuracy and a cleaner integration with other tasks like segmentation and classification.
-            </li>
-          </ol>
-          <p>
-            The exploration of DETR is aimed at understanding its potential for providing more scalable and efficient solutions in environments that require handling a large variety of object sizes and complex scenes.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End Method Section -->
   
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
