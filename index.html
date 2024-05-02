@@ -106,7 +106,7 @@
     <div class="hero-body">
       <img src="static/images/intro_img.png" alt="Descriptive Alt Text" style="width:100%; height:auto;">
       <h2 class="subtitle has-text-centered">
-        Sample images from dataset.
+        Sample images from dataset. (MAYBE SPECIFY THE DATASET!!!)
       </h2>
     </div>
   </div>
@@ -124,7 +124,7 @@
             The construction industry is known for its high-risk environments, with workers exposed to various hazards, including falling objects, which can lead to severe head injuries or even fatalities. The critical nature of these accidents, particularly head injuries resulting from the improper use of safety helmets, underscores a pressing concern for worker safety. In 2012 alone, the construction sector witnessed over 65,000 head injuries requiring days away from work, with head injuries culminating in 1,020 fatalities, according to the 2015 edition of the National Safety Council's "Injury Facts" chartbook <a href="#ref-6">[6]</a>. Moreover, out of the total of 391 people with body parts injured in the construction industry in 2016, 161 people (41.2%) were injured in the head, according to the Korea Occupational Safety and Health Agency <a href="#ref-9">[9]</a>.
           </p>
           <p>
-            In response to this alarming issue, this project aims to find the best automatic safety helmet detection system that will mitigate workplace accidents, by leveraging the advanced capabilities of deep learning models in object detection. Many architectures can be used to solve this object detection problem. In this research, we will investigate various state-of-the-art models, including YOLOv5 <a href="#ref-7">[7]</a>, YOLOv8 <a href="#ref-8">[8]</a>, Faster-RCNN <a href="#ref-11">[11]</a>, and Vision Transformers (ViT) <a href="#ref-3">[3]</a>, to ascertain their applicability and effectiveness on our dataset.
+            In response to this alarming issue, this project aims to find the best automatic safety helmet detection system that will mitigate workplace accidents, by leveraging the advanced capabilities of deep learning models in object detection. Many architectures can be used to solve this object detection problem. In this research, we investigate various state-of-the-art models, including YOLOv5 <a href="#ref-7">[7]</a>, YOLOv8 <a href="#ref-8">[8]</a>, and Vision Transformers (ViT) <a href="#ref-3">[3]</a>, (specifically the Detection Transformer (DETR), to ascertain their applicability and effectiveness on our dataset.
           </p>
         </div>
       </div>
@@ -149,7 +149,7 @@
           </figure>
           <h3 class="title is-4">Data Pre-processing</h3>
           <p>
-            As we can observe from the Figure 1 above, the dataset is highly imbalanced. Most of the instances (approximately 15000) refer to the 'helmet' class while only about 5000 instances are of the 'head' class and less than 1000 instances are of the 'person' class. So, for this research, we will focus only on two classes: 'Helmet' and 'Head'. The decision to focus only on these two classes is also based on the project’s primary goal of detecting whether workers are wearing their safety helmets correctly. By identifying instances of "Head" without a corresponding "Helmet," the system can alert supervisors to potential safety violations, allowing for prompt corrective action. Furthermore, we reshaped the images into (640x640) to comply with the YOLO input size requirements. Finally, we split our data into 3 sets (training, validation, and test sets) with 3000, 1000, and 1000 images respectively.
+            As we can observe from the Figure 1 above, the dataset is highly imbalanced. Most of the instances (approximately 15000) refer to the 'helmet' class while only about 5000 instances are of the 'head' class and less than 1000 instances are of the 'person' class. So, for this research, we will focus only on two classes: 'Helmet' and 'Head'. The decision to focus only on these two classes is also based on the project’s primary goal of detecting whether workers are wearing their safety helmets correctly. By identifying instances of "Head" without a corresponding "Helmet," the system can alert supervisors to potential safety violations, allowing for prompt corrective action. Furthermore,(just for the YOLO experiments!!!) we reshaped the images into (640x640) to comply with the YOLO input size requirements. Finally, we split our data into 3 sets (training, validation, and test sets) with 3000, 1000, and 1000 images respectively.
           </p>
         </div>
       </div>
@@ -198,7 +198,7 @@
           <!-- DETR Subsection -->
           <h3 class="title is-4">DETR</h3>
           <p>
-            In addition to YOLO architectures, we also explored the use of DETR (Detection Transformer), a novel architecture that approaches object detection with a set-based global loss and uses transformers. DETR eliminates the need for many hand-designed components like anchor generation and non-maximum suppression that YOLO relies on. This method has never been used for this specific problem and based on our results it can become one of the best approaches. It consists of 3 main components:
+            In addition to YOLO architectures, we also explored the use of DETR (Detection Transformer), a novel architecture that approaches object detection with a set-based global loss and uses transformers. DETR eliminates the need for many hand-designed components like anchor generation and non-maximum suppression that YOLO relies on. This method has not been used for this specific dataset, to the best of our knowledge, and based on our results it can become one of the best approaches. It consists of 3 main components:
           </p>
           <ol>
             <li>
