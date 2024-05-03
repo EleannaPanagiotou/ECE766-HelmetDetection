@@ -400,6 +400,54 @@
             </tr>
           </tbody>
         </table>
+
+        <table class="table is-striped is-fullwidth">
+            <thead>
+              <tr>
+                <th>Model</th>
+                <th># of Parameters (M)</th>
+                <th>Optimizer</th>
+                <th># of Epochs</th>
+                <th>Learning rate</th>
+                <th>Batch Size</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>YOLOv5n</td>
+                <td>1.9</td>
+                <td>SGD</td>
+                <td>50</td>
+                <td>0.01</td>
+                <td>32</td>
+              </tr>
+              <tr>
+                <td>YOLOv8n</td>
+                <td>3.2</td>
+                <td>Adam</td>
+                <td>50</td>
+                <td>0.001</td>
+                <td>32</td>
+              </tr>
+              <tr>
+                <td>DETR</td>
+                <td>41.3</td>
+                <td>AdamW</td>
+                <td>30</td>
+                <td>0.01</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>YOLOv5x</td>
+                <td>86.7</td>
+                <td>SGD</td>
+                <td>50</td>
+                <td>0.001</td>
+                <td>32</td>
+              </tr>
+            </tbody>
+          </table>
+
           <figure>
             <img src="static/images/val_batch2_pred_v5.jpg" alt="Predictions for test batch of 16 images using YOLOv5" style="width:70%; max-width:600px; height:auto;">
             <figcaption>Figure 5: Predictions for test batch of 16 images using YOLOv5</figcaption>
