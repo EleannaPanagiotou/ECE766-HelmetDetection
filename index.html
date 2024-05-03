@@ -235,7 +235,7 @@
           <!-- DETR Subsection -->
           <h3 class="title is-4">DETR</h3>
           <p>
-            In addition to YOLO architectures, we also explored the use of DETR (Detection Transformer), a novel architecture that approaches object detection with a set-based global loss and uses transformers. DETR eliminates the need for many hand-designed components like anchor generation and non-maximum suppression that YOLO relies on. This method has not been used for this specific dataset, to the best of our knowledge, and based on our results it can become one of the best approaches. It consists of 3 main components:
+             addition to YOLO architectures, we also explored the use of DETR (Detection Transformer), a novel architecture that approaches object detection with a set-based global loss and uses transformers. DETR was proposed by the Facebook AI Research team in 2020 and eliminates the need for many hand-designed components like anchor generation and non-maximum suppression that YOLO relies on. This method has not been used for this specific dataset, to the best of our knowledge, and based on our results it can become one of the best approaches. It consists of 3 main components:
           </p>
           <ol>
             <li>
@@ -255,6 +255,9 @@
             <img src="static/images/detr.png" alt="Visual representation of DETR model architecture" style="width:100%; max-width:900px; height:auto;">
             <figcaption>Figure 3: Visual representation of DETR model architecture.</figcaption>
           </figure>
+
+          The model is trained on the COCO dataset which contains 80 classes, not including ours. Therefore, the need to fine-tune the model to our dataset arose.
+
 
           <!-- Evaluation Metrics Subsection -->
           <h3 class="title is-4">Evaluation Metrics</h3>
