@@ -106,7 +106,7 @@
     <div class="hero-body">
       <img src="static/images/intro_img.png" alt="Descriptive Alt Text" style="width:100%; height:auto;">
       <h2 class="subtitle has-text-centered">
-        Sample images from dataset. (MAYBE SPECIFY THE DATASET!!!)
+        Sample images from the Hard Hat worker dataset <a href="#ref-5">[5]</a>.
       </h2>
     </div>
   </div>
@@ -149,7 +149,7 @@
           </figure>
           <h3 class="title is-4">Data Pre-processing</h3>
           <p>
-            As we can observe from the Figure 1 above, the dataset is highly imbalanced. Most of the instances (approximately 15000) refer to the 'helmet' class while only about 5000 instances are of the 'head' class and less than 1000 instances are of the 'person' class. So, for this research, we only focus on two classes: 'Helmet' and 'Head'. The decision to focus only on these two classes is also based on the project’s primary goal of detecting whether workers are wearing their safety helmets correctly. By identifying instances of "Head" without a corresponding "Helmet," the system can alert supervisors to potential safety violations, allowing for prompt corrective action. Furthermore,(just for the YOLO experiments!!!) we reshaped the images into (640x640) to comply with the YOLO input size requirements. Finally, we split our data into 3 sets (training, validation, and test sets) with 3000, 1000, and 1000 images respectively.
+            As we can observe from the Figure 1 above, the dataset is highly imbalanced. Most of the instances (approximately 15000) refer to the 'helmet' class while only about 5000 instances are of the 'head' class and less than 1000 instances are of the 'person' class. So, for this research, we only focus on two classes: 'Helmet' and 'Head'. The decision to focus only on these two classes is also based on the project’s primary goal of detecting whether workers are wearing their safety helmets correctly. By identifying instances of "Head" without a corresponding "Helmet," the system can alert supervisors to potential safety violations, allowing for prompt corrective action. Furthermore, in order to run  the YOLO experiments, we reshaped the images into (640x640) to comply with the YOLO input size requirements. Finally, we split our data into 3 sets (training, validation, and test sets) with 3000, 1000, and 1000 images respectively.
           </p>
         </div>
       </div>
