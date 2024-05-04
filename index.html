@@ -237,6 +237,56 @@
 
           The model is trained on the COCO dataset which contains 80 classes, not including ours. Therefore, the need to fine-tune the model to our dataset arose.
 
+           <!-- Hyperparameters Subsection -->
+          <h3 class="title is-4">Hyperparameters</h3>
+          <p>For training all the models we used all the hyperparameters presented in Table: </p>
+          <table class="table is-striped is-fullwidth">
+           <caption>Table 1: Training Configuration</caption>
+            <thead>
+              <tr>
+                <th>Model</th>
+                <th># of Parameters (M)</th>
+                <th>Optimizer</th>
+                <th># of Epochs</th>
+                <th>Learning rate</th>
+                <th>Batch Size</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>YOLOv5n</td>
+                <td>1.9</td>
+                <td>SGD</td>
+                <td>50</td>
+                <td>0.01</td>
+                <td>32</td>
+              </tr>
+              <tr>
+                <td>YOLOv8n</td>
+                <td>3.2</td>
+                <td>Adam</td>
+                <td>50</td>
+                <td>0.001</td>
+                <td>32</td>
+              </tr>
+              <tr>
+                <td>DETR</td>
+                <td>41.3</td>
+                <td>AdamW</td>
+                <td>30</td>
+                <td>0.01</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>YOLOv5x</td>
+                <td>86.7</td>
+                <td>SGD</td>
+                <td>50</td>
+                <td>0.001</td>
+                <td>32</td>
+              </tr>
+            </tbody>
+          </table>
 
           <!-- Evaluation Metrics Subsection -->
           <h3 class="title is-4">Evaluation Metrics</h3>
@@ -280,7 +330,7 @@
             <figcaption>Figure 7: Precision-Recall curve (PR Curve) for the test dataset using YOLOv8</figcaption>
           </figure>
           <table class="table is-striped is-fullwidth">
-            <caption>Table 1: Model Evaluation Metrics</caption>
+            <caption>Table 2: Model Evaluation Metrics</caption>
             <thead>
               <tr>
                 <th>Model</th>
@@ -381,53 +431,7 @@
           </tbody>
         </table>
 
-        <table class="table is-striped is-fullwidth">
-           <caption>Table 2: Training Configuration</caption>
-            <thead>
-              <tr>
-                <th>Model</th>
-                <th># of Parameters (M)</th>
-                <th>Optimizer</th>
-                <th># of Epochs</th>
-                <th>Learning rate</th>
-                <th>Batch Size</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>YOLOv5n</td>
-                <td>1.9</td>
-                <td>SGD</td>
-                <td>50</td>
-                <td>0.01</td>
-                <td>32</td>
-              </tr>
-              <tr>
-                <td>YOLOv8n</td>
-                <td>3.2</td>
-                <td>Adam</td>
-                <td>50</td>
-                <td>0.001</td>
-                <td>32</td>
-              </tr>
-              <tr>
-                <td>DETR</td>
-                <td>41.3</td>
-                <td>AdamW</td>
-                <td>30</td>
-                <td>0.01</td>
-                <td>4</td>
-              </tr>
-              <tr>
-                <td>YOLOv5x</td>
-                <td>86.7</td>
-                <td>SGD</td>
-                <td>50</td>
-                <td>0.001</td>
-                <td>32</td>
-              </tr>
-            </tbody>
-          </table>
+        
 
           <figure>
             <img src="static/images/val_batch2_pred_v5.jpg" alt="Predictions for test batch of 16 images using YOLOv5" style="width:70%; max-width:900px; height:auto;">
