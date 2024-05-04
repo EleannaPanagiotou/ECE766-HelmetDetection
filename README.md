@@ -9,7 +9,7 @@ During experimentation, we used Linux machines.
 
 ### Start by cloning this repo
 ```bash
-https://github.com/EleannaPanagiotou/ECE766-HelmetDetection.git
+git clone https://github.com/EleannaPanagiotou/ECE766-HelmetDetection.git
 ```
 
 ## Conda
