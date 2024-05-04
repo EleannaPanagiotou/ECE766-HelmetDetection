@@ -12,9 +12,9 @@ https://github.com/EleannaPanagiotou/ECE766-HelmetDetection.git
 ```
 
 ## Conda
-To set up the necessary environment for this project, install the Conda environment using the provided `conda_env.yml` file:
+To set up the necessary environment for this project, install the Conda environment using the provided `environment.yml` file:
 ```bash
-conda env create -f conda_env.yml
+conda env create -f environment.yml
 ```
 
 Activate the environment:
