@@ -3,14 +3,31 @@ Eleanna Panagiotou, Zack Sifakis
 
 This is a project for course ECE766 (Spring24)
 
-Example project pages built using this template are:
-- https://vision.huji.ac.il/spectral_detuning/
-- https://vision.huji.ac.il/podd/
-- https://dreamix-video-editing.github.io
-- https://vision.huji.ac.il/conffusion/
-- https://vision.huji.ac.il/3d_ads/
-- https://vision.huji.ac.il/ssrl_ad/
-- https://vision.huji.ac.il/deepsim/
+
+## Environment Preparation
+
+### Start by cloning this repo
+
+```bash
+https://github.com/EleannaPanagiotou/ECE766-HelmetDetection.git
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
