@@ -441,27 +441,27 @@
         <!-- Comparative Predictions Subsection -->
         <section>
           <h3 class="title is-4">Comparing visual results</h3>
-          <p>In this section, we present the capabilities and limitations of the Transformer and YOLO models across varied testing scenarios. In the first instance (Figure 10), both models were evaluated using a clear image, where they accurately detected all classes. However, the Transformer model demonstrated notably higher confidence levels than the YOLOv5n, suggesting superior reliability in straightforward scenarios. The second test (Figure 11) challenged the models with distant instances, revealing significant differences in performance. While the Transformer maintained high accuracy and confidence, the YOLOv8n model struggled, misclassifying a central red region as a helmet and failing to detect a helmet in the upper part of the image, indicating potential limitations in handling complex or ambiguous scenes. Lastly, in a low-light condition test (Figure 12), the Transformer model again showed its robustness with high confidence and flawless object classification. In contrast, the YOLOv8n model exhibited lower confidence and made critical errors, such as misclassifying a truck, underscoring the challenges YOLO faces in adverse lighting conditions. These comparative predictions underscore the importance of model selection based on the specific requirements and challenges of the deployment environment.</p>
+          <p>In this section, we present the capabilities and limitations of the Transformer and YOLO models across varied testing scenarios. In the first instance (Figure 8), both models were evaluated using a clear image, where they accurately detected all classes. However, the Transformer model demonstrated notably higher confidence levels than the YOLOv5n, suggesting superior reliability in straightforward scenarios. The second test (Figure 9) challenged the models with distant instances, revealing significant differences in performance. While the Transformer maintained high accuracy and confidence, the YOLOv8n model struggled, misclassifying a central red region as a helmet and failing to detect a helmet in the upper part of the image, indicating potential limitations in handling complex or ambiguous scenes. Lastly, in a low-light condition test (Figure 10), the Transformer model again showed its robustness with high confidence and flawless object classification. In contrast, the YOLOv8n model exhibited lower confidence and made critical errors, such as misclassifying a truck, underscoring the challenges YOLO faces in adverse lighting conditions. These comparative predictions underscore the importance of model selection based on the specific requirements and challenges of the deployment environment.</p>
           
           <figure>
             <img src="static/images/omp1.png" alt="Description for Additional Image 1" style="width:70%; max-width:99900px; height:auto;">
-            <figcaption>Figure 10: Comparative Predictions from Transformer (left image) and YOLOv5n (right image) in a clear image.</figcaption>
+            <figcaption>Figure 8: Comparative Predictions from Transformer (left image) and YOLOv5n (right image) in a clear image.</figcaption>
           </figure>
           <figure>
             <img src="static/images/comp2.png" alt="Description for Additional Image 2" style="width:70%; max-width:999px; height:auto;">
-            <figcaption>Figure 11: Testing Distant Instances with Transformer (left image) and YOLOv8n (right image). In this image, all instances are far from the camera, which is really challenging for the models.</figcaption>
+            <figcaption>Figure 9: Testing Distant Instances with Transformer (left image) and YOLOv8n (right image). In this image, all instances are far from the camera, which is really challenging for the models.</figcaption>
           </figure>
           <figure>
             <img src="static/images/comp3.png" alt="Description for Additional Image 3" style="width:70%; max-width:999px; height:auto;">
-            <figcaption>Figure 12: Performance Comparison in Low-Light Conditions. This image, challenging due to its darkness, showcases predictions from the Transformer (left image) and the YOLOv8n (right image).</figcaption>
+            <figcaption>Figure 10: Performance Comparison in Low-Light Conditions. This image, challenging due to its darkness, showcases predictions from the Transformer (left image) and the YOLOv8n (right image).</figcaption>
           </figure>
           <figure>
             <img src="static/images/val_batch2_pred_v5.jpg" alt="Predictions for test batch of 16 images using YOLOv5" style="width:70%; max-width:900px; height:auto;">
-            <figcaption>Figure 8: Predictions for test batch of 16 images using YOLOv5</figcaption>
+            <figcaption>Figure 11: Predictions for test batch of 16 images using YOLOv5</figcaption>
           </figure>
           <figure>
             <img src="static/images/val_batch2_pred_v8.jpg" alt="Predictions for test batch of 16 images using YOLOv8" style="width:70%; max-width:900px; height:auto;">
-            <figcaption>Figure 9: Predictions for test batch of 16 images using YOLOv8</figcaption>
+            <figcaption>Figure 12: Predictions for test batch of 16 images using YOLOv8</figcaption>
           </figure>
         </section>
         <!-- End Comparative Predictions Subsection -->
