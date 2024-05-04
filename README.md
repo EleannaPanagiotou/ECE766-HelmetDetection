@@ -1,6 +1,7 @@
-# Academic Project Page Template
-This is an academic paper project page template.
+# Enhancing Construction Site Safety: Advanced Deep Learning Approaches for Accurate Helmet Detection
+Eleanna Panagiotou, Zack Sifakis 
 
+This is a project for course ECE766 (Spring24)
 
 Example project pages built using this template are:
 - https://vision.huji.ac.il/spectral_detuning/
