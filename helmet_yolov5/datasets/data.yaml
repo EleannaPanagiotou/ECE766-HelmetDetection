@@ -1,0 +1,7 @@
+names:
+- helmet
+- head
+nc: 2
+test: /home/epanagiotou/CV_proj/datasets/images/test
+train: /home/epanagiotou/CV_proj/datasets/images/train
+val: /home/epanagiotou/CV_proj/datasets/images/val
