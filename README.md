@@ -35,28 +35,8 @@ To run a few demos with YOLOv5n approach, open the `Helmet_yolov5.ipynb` file an
 To run a few demos with YOLOv8n approach, open the `Helmet_yolov8.ipynb` file and run all the cells sequentially.
 
 ### DEtection TRansformer
-To run a few demos with DETR approach, open the `Helmet_detr.ipynb` file and run all the cells sequentially.
+To run a few demos with DETR approach, at first download the `output` folder from here: https://drive.google.com/file/d/1PFBXzpQINCa1DZ3SpD74o2k4G_VUeIB1/view?usp=sharing
+Move the folder inside the `helmet_detr` folder. Finally, open the `Helmet_detr.ipynb` file and run all the cells sequentially.
 
 ## Model Training 
 TBA
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Acknowledgments
-Parts of this project page were adopted from the [Nerfies](https://nerfies.github.io/) page.
-
-## Website License
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
