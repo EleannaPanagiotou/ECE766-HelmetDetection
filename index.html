@@ -320,8 +320,7 @@
           <p>YOLOv5n and YOLOv8n demonstrated robust performance across all categories, with YOLOv8n showing a slight edge in precision and recall, especially in the 'helmet' and 'head' classes. This is indicative of YOLOv8n's improved architecture, which utilizes an anchor-free split Ultralytics head, enhancing detection accuracy and processing efficiency. Specifically, YOLOv8n reached a precision of 0.934 and a recall of 0.907 for helmets, reflecting its strong suitability for real-time safety applications where detecting safety gear accurately is critical.</p>
 
           <p>DETR, employing a transformer-based approach, outperformed both YOLO models in terms of precision and recall in low-light conditions and complex scenarios, as highlighted by the dark image test. DETR’s highest scores were in the 'helmet' category with a precision of 0.941 and a recall of 0.912. Its architecture allows it to manage challenging detection tasks better, thanks to its global view of the image and the elimination of many hand-designed components of conventional detectors.</p>
-          <p>The main results from our early experiments using YOLOv5 and YOLOv8 include the confusion matrices, the PR curves, the precision/recall/mAP, and the predictions for the test dataset.</p>
-          <figure>
+         <figure>
             <img src="static/images/confusion_matrix_test_v5.png" alt="Confusion matrix for the test dataset using YOLOv5 (true vs. predicted labels)" style="width:70%; max-width:600px; height:auto;">
             <figcaption>Figure 4: Confusion matrix for the test dataset using YOLOv5 (true vs. predicted labels)</figcaption>
           </figure>
