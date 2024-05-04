@@ -36,7 +36,8 @@ To run a few demos with YOLOv8n approach, open the `Helmet_yolov8.ipynb` file an
 
 ### DEtection TRansformer
 To run a few demos with DETR approach, at first download the `output` folder from here: https://drive.google.com/file/d/1PFBXzpQINCa1DZ3SpD74o2k4G_VUeIB1/view?usp=sharing
-Move the folder inside the `helmet_detr` folder. Finally, open the `Helmet_detr.ipynb` file and run all the cells sequentially.
+
+Then, move the folder inside the `helmet_detr` folder. Finally, open the `Helmet_detr.ipynb` file and run all the cells sequentially.
 
 ## Model Training 
 TBA
