@@ -20,7 +20,7 @@ conda env create -f environment.yml
 
 Activate the environment:
 ```bash
-conda activate helmet-detection-env
+conda activate helmet_det
 ```
 
 ## Model Evaluation
