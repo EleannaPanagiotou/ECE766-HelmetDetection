@@ -3,6 +3,9 @@ Eleanna Panagiotou, Zack Sifakis
 
 This is a project created for course ECE766 (Spring24)
 
+## Project webpage
+https://eleannapanagiotou.github.io/ECE766-HelmetDetection/
+
 
 ## Environment Preparation
 During experimentation, we used Linux machines.
