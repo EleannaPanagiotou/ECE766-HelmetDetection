@@ -1,7 +1,7 @@
 # Enhancing Construction Site Safety: Advanced Deep Learning Approaches for Accurate Helmet Detection
 Eleanna Panagiotou, Zack Sifakis 
 
-This is a project for course ECE766 (Spring24)
+This is a project created for course ECE766 (Spring24)
 
 
 ## Environment Preparation
