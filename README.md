@@ -5,6 +5,7 @@ This is a project created for course ECE766 (Spring24)
 
 
 ## Environment Preparation
+During experimentation, we used Linux machines.
 
 ### Start by cloning this repo
 ```bash
