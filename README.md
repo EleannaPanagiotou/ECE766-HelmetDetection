@@ -8,11 +8,15 @@ This is a project for course ECE766 (Spring24)
 
 ### Start by cloning this repo
 
-```bash
 https://github.com/EleannaPanagiotou/ECE766-HelmetDetection.git
 
+## Conda
 
+To set up the necessary environment for this project, install the Conda environment using the provided `conda_env.yml` file:
+conda env create -f conda_env.yml
 
+Activate the environment:
+conda activate helmet-detection-env
 
 
 
