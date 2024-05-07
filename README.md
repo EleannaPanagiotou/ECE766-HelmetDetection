@@ -29,10 +29,12 @@ conda activate helmet_det
 ## Model Evaluation
 
 ### YOLOv5n
-To run a few demos with YOLOv5n approach, open the `Helmet_yolov5.ipynb` file and run all the cells sequentially. Code for the model from here: Glenn Jocher. Ultralytics YOLOv5. Version 7.0. 2020. DOI: 10.5281/zenodo.3908559. URL: https://github.com/ultralytics/yolov5.
+To run a few demos with YOLOv5n approach, open the `Helmet_yolov5.ipynb` file and run all the cells sequentially. 
+Code for the model from here: Glenn Jocher. Ultralytics YOLOv5. Version 7.0. 2020. DOI: 10.5281/zenodo.3908559. URL: https://github.com/ultralytics/yolov5.
 
 ### YOLOv8n
-To run a few demos with YOLOv8n approach, open the `Helmet_yolov8.ipynb` file and run all the cells sequentially. Code for the model from here: Glenn Jocher, Ayush Chaurasia, and Jing Qiu. Ultralytics YOLOv8. Version 8.0.0. 2023. URL: https://github.com/ultralytics/ultralytics.
+To run a few demos with YOLOv8n approach, open the `Helmet_yolov8.ipynb` file and run all the cells sequentially. 
+Code for the model from here: Glenn Jocher, Ayush Chaurasia, and Jing Qiu. Ultralytics YOLOv8. Version 8.0.0. 2023. URL: https://github.com/ultralytics/ultralytics.
 
 ### DEtection TRansformer
 To run a few demos with DETR approach, at first download the `output` folder from here: https://drive.google.com/file/d/1PFBXzpQINCa1DZ3SpD74o2k4G_VUeIB1/view?usp=sharing
